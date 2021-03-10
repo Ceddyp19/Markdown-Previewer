@@ -40,7 +40,7 @@ class Editor extends React.Component {
         return (
             <div className='editor-wrapper'>
                 <div className='toolbar'>Editor</div>
-                <div><textarea id='editor' value={this.state.text} placeholder="Editor" onChange={this.handleChange} /></div>
+                <textarea id='editor' value={this.state.text} placeholder="Editor" onChange={this.handleChange}></textarea>
             </div>
         )
     }

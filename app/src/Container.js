@@ -1,7 +1,9 @@
 import React from 'react';
 import Editor from './Editor';
 import Preview from './Preview';
+//marked converts text to markup text
 import marked from 'marked';
+import './App.css'
 
 export default class Container extends React.Component {
     constructor(props) {
@@ -26,8 +28,11 @@ export default class Container extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className='container'>
                 <Editor handleText={this.handleText}/>
+                <div className='convertor'></div>
+                {/* don't use text property in preview because markup doesn't work for some reason.
+                Used componentDidMount instead to populate Previewer */}
                 <Preview text={this.state.text}/>
             </div>
         )
