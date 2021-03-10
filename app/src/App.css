@@ -1,0 +1,44 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+body{
+  background-color: rgb(100, 3, 3);
+}
+
+#editor{
+  background-color: tomato
+}
+
+#preview{
+  background-color: tomato;
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.editor-wrapper {
+  width: 600px;
+    margin: 18px auto;
+    margin-top: 18px;
+    margin-right: auto;
+    margin-bottom: 18px;
+    margin-left: auto;
+}
+
+.editor-wrapper .toolbar {
+  width: 99%;
+}
+
+.toolbar {
+  position: relative;
+  background-color: #4aa3a3;
+  padding: 4px 4px 3px 3px;
+  border: 1px solid #1d2f2f;
+  box-shadow: 1px 1px 10px 2px #3a5f5f;
+  font-family: Russo One;
+  font-size: 15px;
+}
